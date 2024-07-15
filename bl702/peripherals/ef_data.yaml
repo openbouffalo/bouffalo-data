@@ -24,14 +24,14 @@ registers:
     offset_bytes: 0x10
     size_bytes: 0x4
     fieldset: ef_sw_usage_0
-  - name: ef_wifi_mac_low
+  - name: ef_mac_low
     offset_bytes: 0x14
     size_bytes: 0x4
-    fieldset: ef_wifi_mac_low
-  - name: ef_wifi_mac_high
+    fieldset: ef_mac_low
+  - name: ef_mac_high
     offset_bytes: 0x18
     size_bytes: 0x4
-    fieldset: ef_wifi_mac_high
+    fieldset: ef_mac_high
   - name: ef_key_slot_0_w0
     offset_bytes: 0x1c
     size_bytes: 0x4
@@ -346,16 +346,16 @@ fieldsets:
         size_bits: 2
         offset_bits: 30
         access: r/w
-  - name: ef_wifi_mac_low
+  - name: ef_mac_low
     fields:
-      - name: ef_wifi_mac_low
+      - name: ef_mac_low
         size_bits: 32
         offset_bits: 0
         reset_value: 0x0
         access: r/w
-  - name: ef_wifi_mac_high
+  - name: ef_mac_high
     fields:
-      - name: ef_wifi_mac_high
+      - name: ef_mac_high
         size_bits: 32
         offset_bits: 0
         reset_value: 0x0
@@ -583,7 +583,7 @@ fieldsets:
         offset_bits: 17
         reset_value: 0x0
         access: r/w
-      - name: wr_lock_wifi_mac
+      - name: wr_lock_mac
         size_bits: 1
         offset_bits: 18
         reset_value: 0x0
