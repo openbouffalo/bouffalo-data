@@ -1,3 +1,5 @@
+# TODO: Instead of using access r/w, maybe have "efuse" access type.
+
 name: ef_data
 description: eFuse Data
 size_bytes: 0x80
@@ -256,10 +258,101 @@ fieldsets:
         access: r/w
   - name: ef_sw_usage_0
     fields:
-      - name: ef_sw_usage_0
-        size_bits: 32
+      - name: bootrom_protect
+        size_bits: 1
         offset_bits: 0
-        reset_value: 0x0
+        access: r/w
+      - name: uart_log_disable
+        size_bits: 1
+        offset_bits: 1
+        access: r/w
+      - name: sdio_pin_init
+        size_bits: 1
+        offset_bits: 2
+        access: r/w
+      - name: disable_cci_coexist
+        size_bits: 1
+        offset_bits: 3
+        access: r/w
+      - name: xtal_type
+        size_bits: 3
+        offset_bits: 4
+        access: r/w
+      - name: pll_clk
+        size_bits: 3
+        offset_bits: 7
+        access: r/w
+      - name: hclk_div
+        size_bits: 1
+        offset_bits: 10
+        access: r/w
+      - name: bclk_div
+        size_bits: 1
+        offset_bits: 11
+        access: r/w
+      - name: flash_clk_type
+        size_bits: 3
+        offset_bits: 12
+        access: r/w
+      - name: flash_clk_div
+        size_bits: 1
+        offset_bits: 15
+        access: r/w
+      - name: flash_cfg
+        size_bits: 2
+        offset_bits: 16
+        access: r/w
+      - name: flash_pwr_delay
+        size_bits: 2
+        offset_bits: 18
+        access: r/w
+      - name: tz_boot
+        size_bits: 1
+        offset_bits: 20
+        access: r/w
+      - name: encrypted_tz_boot
+        size_bits: 1
+        offset_bits: 21
+        access: r/w
+      - name: hbn_check_sign
+        size_bits: 1
+        offset_bits: 22
+        access: r/w
+      - name: keep_dbg_port_closed
+        size_bits: 1
+        offset_bits: 23
+        access: r/w
+      - name: mediaboot_disable
+        size_bits: 1
+        offset_bits: 24
+        access: r/w
+      - name: uartboot_disable
+        size_bits: 1
+        offset_bits: 25
+        access: r/w
+      - name: sdioboot_disable
+        size_bits: 1
+        offset_bits: 26
+        access: r/w
+      - name: hbn_jump_disable
+        size_bits: 1
+        offset_bits: 27
+        access: r/w
+      - name: jtag_switch
+        size_bits: 1
+        offset_bits: 28
+        access: r/w
+      - name: jtag_init
+        size_bits: 1
+        offset_bits: 29
+        access: r/w
+      - name: qfn40
+        size_bits: 1
+        offset_bits: 30
+        access: r/w
+      - name: debug_log_reopen
+        size_bits: 1
+        offset_bits: 31
         access: r/w
   - name: ef_wifi_mac_low
     fields:
