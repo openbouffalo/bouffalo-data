@@ -262,15 +262,11 @@ fieldsets:
         size_bits: 1
         offset_bits: 0
         access: r/w
-      - name: uart_log_disable
-        size_bits: 1
+      - name: uart_log_cfg
+        size_bits: 2
         offset_bits: 1
         access: r/w
-      - name: sdio_pin_init
-        size_bits: 1
-        offset_bits: 2
-        access: r/w
-      - name: disable_cci_coexist
+      - name: cci_coexist_disble
         size_bits: 1
         offset_bits: 3
         access: r/w
@@ -298,11 +294,15 @@ fieldsets:
         size_bits: 1
         offset_bits: 15
         access: r/w
-      - name: flash_cfg
-        size_bits: 2
+      - name: trim_enable
+        size_bits: 1
         offset_bits: 16
         access: r/w
-      - name: flash_pwr_delay
+      - name: no_hd_boot_en
+        size_bits: 1
+        offset_bits: 17
+        access: r/w
+      - name: flash_power_delay
         size_bits: 2
         offset_bits: 18
         access: r/w
@@ -330,7 +330,7 @@ fieldsets:
         size_bits: 1
         offset_bits: 25
         access: r/w
-      - name: sdioboot_disable
+      - name: usbboot_disable
         size_bits: 1
         offset_bits: 26
         access: r/w
@@ -338,21 +338,13 @@ fieldsets:
         size_bits: 1
         offset_bits: 27
         access: r/w
-      - name: jtag_switch
-        size_bits: 1
+      - name: jtag_group
+        size_bits: 2
         offset_bits: 28
         access: r/w
-      - name: jtag_init
-        size_bits: 1
-        offset_bits: 29
-        access: r/w
-      - name: qfn40
-        size_bits: 1
+      - name: usb_group
+        size_bits: 2
         offset_bits: 30
-        access: r/w
-      - name: debug_log_reopen
-        size_bits: 1
-        offset_bits: 31
         access: r/w
   - name: ef_wifi_mac_low
     fields:
