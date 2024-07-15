@@ -1,0 +1,547 @@
+name: ef_data
+description: eFuse Data
+size_bytes: 0x80
+registers:
+  - name: ef_cfg_0
+    offset_bytes: 0x0
+    size_bytes: 0x4
+    fieldset: ef_cfg_0
+  - name: ef_dbg_pwd_low
+    offset_bytes: 0x4
+    size_bytes: 0x4
+    fieldset: ef_dbg_pwd_low
+  - name: ef_dbg_pwd_high
+    offset_bytes: 0x8
+    size_bytes: 0x4
+    fieldset: ef_dbg_pwd_high
+  - name: ef_ana_trim_0
+    offset_bytes: 0xc
+    size_bytes: 0x4
+    fieldset: ef_ana_trim_0
+  - name: ef_sw_usage_0
+    offset_bytes: 0x10
+    size_bytes: 0x4
+    fieldset: ef_sw_usage_0
+  - name: ef_wifi_mac_low
+    offset_bytes: 0x14
+    size_bytes: 0x4
+    fieldset: ef_wifi_mac_low
+  - name: ef_wifi_mac_high
+    offset_bytes: 0x18
+    size_bytes: 0x4
+    fieldset: ef_wifi_mac_high
+  - name: ef_key_slot_0_w0
+    offset_bytes: 0x1c
+    size_bytes: 0x4
+    fieldset: ef_key_slot_0_w0
+  - name: ef_key_slot_0_w1
+    offset_bytes: 0x20
+    size_bytes: 0x4
+    fieldset: ef_key_slot_0_w1
+  - name: ef_key_slot_0_w2
+    offset_bytes: 0x24
+    size_bytes: 0x4
+    fieldset: ef_key_slot_0_w2
+  - name: ef_key_slot_0_w3
+    offset_bytes: 0x28
+    size_bytes: 0x4
+    fieldset: ef_key_slot_0_w3
+  - name: ef_key_slot_1_w0
+    offset_bytes: 0x2c
+    size_bytes: 0x4
+    fieldset: ef_key_slot_1_w0
+  - name: ef_key_slot_1_w1
+    offset_bytes: 0x30
+    size_bytes: 0x4
+    fieldset: ef_key_slot_1_w1
+  - name: ef_key_slot_1_w2
+    offset_bytes: 0x34
+    size_bytes: 0x4
+    fieldset: ef_key_slot_1_w2
+  - name: ef_key_slot_1_w3
+    offset_bytes: 0x38
+    size_bytes: 0x4
+    fieldset: ef_key_slot_1_w3
+  - name: ef_key_slot_2_w0
+    offset_bytes: 0x3c
+    size_bytes: 0x4
+    fieldset: ef_key_slot_2_w0
+  - name: ef_key_slot_2_w1
+    offset_bytes: 0x40
+    size_bytes: 0x4
+    fieldset: ef_key_slot_2_w1
+  - name: ef_key_slot_2_w2
+    offset_bytes: 0x44
+    size_bytes: 0x4
+    fieldset: ef_key_slot_2_w2
+  - name: ef_key_slot_2_w3
+    offset_bytes: 0x48
+    size_bytes: 0x4
+    fieldset: ef_key_slot_2_w3
+  - name: ef_key_slot_3_w0
+    offset_bytes: 0x4c
+    size_bytes: 0x4
+    fieldset: ef_key_slot_3_w0
+  - name: ef_key_slot_3_w1
+    offset_bytes: 0x50
+    size_bytes: 0x4
+    fieldset: ef_key_slot_3_w1
+  - name: ef_key_slot_3_w2
+    offset_bytes: 0x54
+    size_bytes: 0x4
+    fieldset: ef_key_slot_3_w2
+  - name: ef_key_slot_3_w3
+    offset_bytes: 0x58
+    size_bytes: 0x4
+    fieldset: ef_key_slot_3_w3
+  - name: ef_key_slot_4_w0
+    offset_bytes: 0x5c
+    size_bytes: 0x4
+    fieldset: ef_key_slot_4_w0
+  - name: ef_key_slot_4_w1
+    offset_bytes: 0x60
+    size_bytes: 0x4
+    fieldset: ef_key_slot_4_w1
+  - name: ef_key_slot_4_w2
+    offset_bytes: 0x64
+    size_bytes: 0x4
+    fieldset: ef_key_slot_4_w2
+  - name: ef_key_slot_4_w3
+    offset_bytes: 0x68
+    size_bytes: 0x4
+    fieldset: ef_key_slot_4_w3
+  - name: ef_key_slot_5_w0
+    offset_bytes: 0x6c
+    size_bytes: 0x4
+    fieldset: ef_key_slot_5_w0
+  - name: ef_key_slot_5_w1
+    offset_bytes: 0x70
+    size_bytes: 0x4
+    fieldset: ef_key_slot_5_w1
+  - name: ef_key_slot_5_w2
+    offset_bytes: 0x74
+    size_bytes: 0x4
+    fieldset: ef_key_slot_5_w2
+  - name: ef_key_slot_5_w3
+    offset_bytes: 0x78
+    size_bytes: 0x4
+    fieldset: ef_key_slot_5_w3
+  - name: ef_data_0_lock
+    offset_bytes: 0x7c
+    size_bytes: 0x4
+    fieldset: ef_data_0_lock
+fieldsets:
+  - name: ef_cfg_0
+    fields:
+      - name: ef_sf_aes_mode
+        size_bits: 2
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+      - name: ef_sboot_sign_mode
+        size_bits: 2
+        offset_bits: 2
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd0
+        size_bits: 2
+        offset_bits: 4
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd1
+        size_bits: 1
+        offset_bits: 6
+        reset_value: 0x0
+        access: r/w
+      - name: ef_cpu0_enc_en
+        size_bits: 1
+        offset_bits: 7
+        reset_value: 0x0
+        access: r/w
+      - name: ef_boot_sel
+        size_bits: 4
+        offset_bits: 8
+        reset_value: 0x0
+        access: r/w
+      - name: ef_sf_key_0_sel
+        size_bits: 2
+        offset_bits: 12
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd2
+        size_bits: 1
+        offset_bits: 14
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd3
+        size_bits: 1
+        offset_bits: 15
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd4
+        size_bits: 1
+        offset_bits: 16
+        reset_value: 0x0
+        access: r/w
+      - name: ef_0_key_enc_en
+        size_bits: 1
+        offset_bits: 17
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd5
+        size_bits: 1
+        offset_bits: 18
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd6
+        size_bits: 1
+        offset_bits: 19
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd7
+        size_bits: 1
+        offset_bits: 20
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd8
+        size_bits: 1
+        offset_bits: 21
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd9
+        size_bits: 1
+        offset_bits: 22
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd10
+        size_bits: 1
+        offset_bits: 23
+        reset_value: 0x0
+        access: r/w
+      - name: rsvd11
+        size_bits: 2
+        offset_bits: 24
+        reset_value: 0x0
+        access: r/w
+      - name: ef_dbg_jtag_0_dis
+        size_bits: 2
+        offset_bits: 26
+        reset_value: 0x0
+        access: r/w
+      - name: ef_dbg_mode
+        size_bits: 4
+        offset_bits: 28
+        reset_value: 0x0
+        access: r/w
+  - name: ef_dbg_pwd_low
+    fields:
+      - name: ef_dbg_pwd_low
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_dbg_pwd_high
+    fields:
+      - name: ef_dbg_pwd_high
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_ana_trim_0
+    fields:
+      - name: ef_ana_trim_0
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_sw_usage_0
+    fields:
+      - name: ef_sw_usage_0
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_wifi_mac_low
+    fields:
+      - name: ef_wifi_mac_low
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_wifi_mac_high
+    fields:
+      - name: ef_wifi_mac_high
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_0_w0
+    fields:
+      - name: ef_key_slot_0_w0
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_0_w1
+    fields:
+      - name: ef_key_slot_0_w1
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_0_w2
+    fields:
+      - name: ef_key_slot_0_w2
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_0_w3
+    fields:
+      - name: ef_key_slot_0_w3
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_1_w0
+    fields:
+      - name: ef_key_slot_1_w0
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_1_w1
+    fields:
+      - name: ef_key_slot_1_w1
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_1_w2
+    fields:
+      - name: ef_key_slot_1_w2
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_1_w3
+    fields:
+      - name: ef_key_slot_1_w3
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_2_w0
+    fields:
+      - name: ef_key_slot_2_w0
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_2_w1
+    fields:
+      - name: ef_key_slot_2_w1
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_2_w2
+    fields:
+      - name: ef_key_slot_2_w2
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_2_w3
+    fields:
+      - name: ef_key_slot_2_w3
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_3_w0
+    fields:
+      - name: ef_key_slot_3_w0
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_3_w1
+    fields:
+      - name: ef_key_slot_3_w1
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_3_w2
+    fields:
+      - name: ef_key_slot_3_w2
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_3_w3
+    fields:
+      - name: ef_key_slot_3_w3
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_4_w0
+    fields:
+      - name: ef_key_slot_4_w0
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_4_w1
+    fields:
+      - name: ef_key_slot_4_w1
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_4_w2
+    fields:
+      - name: ef_key_slot_4_w2
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_4_w3
+    fields:
+      - name: ef_key_slot_4_w3
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_5_w0
+    fields:
+      - name: ef_key_slot_5_w0
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_5_w1
+    fields:
+      - name: ef_key_slot_5_w1
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_5_w2
+    fields:
+      - name: ef_key_slot_5_w2
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_key_slot_5_w3
+    fields:
+      - name: ef_key_slot_5_w3
+        size_bits: 32
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+  - name: ef_data_0_lock
+    fields:
+      - name: ef_ana_trim_1
+        size_bits: 13
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_key_slot_4_l
+        size_bits: 1
+        offset_bits: 13
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_key_slot_5_l
+        size_bits: 1
+        offset_bits: 14
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_boot_mode
+        size_bits: 1
+        offset_bits: 15
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_dbg_pwd
+        size_bits: 1
+        offset_bits: 16
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_sw_usage_0
+        size_bits: 1
+        offset_bits: 17
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_wifi_mac
+        size_bits: 1
+        offset_bits: 18
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_key_slot_0
+        size_bits: 1
+        offset_bits: 19
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_key_slot_1
+        size_bits: 1
+        offset_bits: 20
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_key_slot_2
+        size_bits: 1
+        offset_bits: 21
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_key_slot_3
+        size_bits: 1
+        offset_bits: 22
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_key_slot_4_h
+        size_bits: 1
+        offset_bits: 23
+        reset_value: 0x0
+        access: r/w
+      - name: wr_lock_key_slot_5_h
+        size_bits: 1
+        offset_bits: 24
+        reset_value: 0x0
+        access: r/w
+      - name: rd_lock_dbg_pwd
+        size_bits: 1
+        offset_bits: 25
+        reset_value: 0x0
+        access: r/w
+      - name: rd_lock_key_slot_0
+        size_bits: 1
+        offset_bits: 26
+        reset_value: 0x0
+        access: r/w
+      - name: rd_lock_key_slot_1
+        size_bits: 1
+        offset_bits: 27
+        reset_value: 0x0
+        access: r/w
+      - name: rd_lock_key_slot_2
+        size_bits: 1
+        offset_bits: 28
+        reset_value: 0x0
+        access: r/w
+      - name: rd_lock_key_slot_3
+        size_bits: 1
+        offset_bits: 29
+        reset_value: 0x0
+        access: r/w
+      - name: rd_lock_key_slot_4
+        size_bits: 1
+        offset_bits: 30
+        reset_value: 0x0
+        access: r/w
+      - name: rd_lock_key_slot_5
+        size_bits: 1
+        offset_bits: 31
+        reset_value: 0x0
+        access: r/w
