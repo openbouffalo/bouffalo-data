@@ -104,14 +104,15 @@ registers:
     offset_bytes: 0x60
     size_bytes: 0x4
     fieldset: ef_key_slot_4_w1
-  - name: ef_key_slot_4_w2
+  - name: ef_usb_customer_vid_pid
+    description: "USB VID & PID used in BootROM USB ISP mode, and in eflash_loader. If VID or PID is not empty, it's overriding chip VID&PID configuration."
     offset_bytes: 0x64
     size_bytes: 0x4
-    fieldset: ef_key_slot_4_w2
-  - name: ef_key_slot_4_w3
+    fieldset: ef_usb_customer_vid_pid
+  - name: ef_usb_chip_vid_pid
     offset_bytes: 0x68
     size_bytes: 0x4
-    fieldset: ef_key_slot_4_w3
+    fieldset: ef_usb_chip_vid_pid
   - name: ef_key_slot_5_w0
     offset_bytes: 0x6c
     size_bytes: 0x4
@@ -486,18 +487,28 @@ fieldsets:
         offset_bits: 0
         reset_value: 0x0
         access: r/w
-  - name: ef_key_slot_4_w2
+  - name: ef_usb_customer_vid_pid
     fields:
-      - name: ef_key_slot_4_w2
-        size_bits: 32
+      - name: ef_usb_customer_pid
+        size_bits: 16
         offset_bits: 0
         reset_value: 0x0
         access: r/w
-  - name: ef_key_slot_4_w3
+      - name: ef_usb_customer_vid
+        size_bits: 16
+        offset_bits: 16
+        reset_value: 0x0
+        access: r/w
+  - name: ef_usb_chip_vid_pid
     fields:
-      - name: ef_key_slot_4_w3
-        size_bits: 32
+      - name: ef_usb_chip_pid
+        size_bits: 16
         offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+      - name: ef_usb_chip_vid
+        size_bits: 16
+        offset_bits: 16
         reset_value: 0x0
         access: r/w
   - name: ef_key_slot_5_w0
