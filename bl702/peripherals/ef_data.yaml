@@ -264,6 +264,8 @@ fieldsets:
         offset_bits: 0
         access: r/w
       - name: uart_log_cfg
+        description: "Values 0 and 3 enables UART debug printing in BootROM on pin 17, baudrate 2000000. Due usage of RC32M and high baudrate, baudrate is very unstable."
+        factory_value: 0x01
         size_bits: 2
         offset_bits: 1
         access: r/w
