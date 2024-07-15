@@ -120,10 +120,10 @@ registers:
     offset_bytes: 0x70
     size_bytes: 0x4
     fieldset: ef_key_slot_5_w1
-  - name: ef_key_slot_5_w2
+  - name: ef_device_info
     offset_bytes: 0x74
     size_bytes: 0x4
-    fieldset: ef_key_slot_5_w2
+    fieldset: ef_device_info
   - name: ef_key_slot_5_w3
     offset_bytes: 0x78
     size_bytes: 0x4
@@ -514,12 +514,35 @@ fieldsets:
         offset_bits: 0
         reset_value: 0x0
         access: r/w
-  - name: ef_key_slot_5_w2
+  - name: ef_device_info
     fields:
-      - name: ef_key_slot_5_w2
-        size_bits: 32
+      - name: rsvd_21_0
+        size_bits: 22
         offset_bits: 0
-        reset_value: 0x0
+        access: rsvd
+      - name: sf_swap_cfg
+        description: "0:swap none, 1:swap SF2_CS & SF2_IO2, 2:swap SF2_IO0 & SF2_IO3, 3:swap both"
+        size_bits: 2
+        offset_bits: 22
+        access: r/w
+      - name: psram_cfg
+        description: "0:no psram, 1:2MB psram, 2:external psram, 3:reserved"
+        size_bits: 2
+        offset_bits: 24
+        access: r/w
+      - name: flash_cfg
+        description: "0:external flash SF2, 1:0.5MB flash, 2:1MB flash, 3:external flash SF1, 5:2MB flash"
+        size_bits: 2
+        offset_bits: 26
+        access: r/w
+      - name: rsvd_28_29
+        size_bits: 2
+        offset_bits: 28
+        access: rsvd
+      - name: pkg_info
+        description: "0:QFN32, 1:QFN40, 2:QFN48, 3:reserved"
+        size_bits: 2
+        offset_bits: 30
         access: r/w
   - name: ef_key_slot_5_w3
     fields:
