@@ -149,7 +149,7 @@ registers:
     size_bytes: 0x4
     fieldset: key_slot_5_w1
   - name: device_info
-    verified: false
+    verified: true
     offset_bytes: 0x74
     size_bytes: 0x4
     fieldset: device_info
