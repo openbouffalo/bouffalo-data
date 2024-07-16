@@ -3,131 +3,163 @@ description: eFuse Data
 size_bytes: 0x80
 registers:
   - name: cfg_0
+    verified: false
     offset_bytes: 0x0
     size_bytes: 0x4
     fieldset: cfg_0
   - name: dbg_pwd_low
+    verified: false
     offset_bytes: 0x4
     size_bytes: 0x4
     fieldset: dbg_pwd_low
   - name: dbg_pwd_high
+    verified: false
     offset_bytes: 0x8
     size_bytes: 0x4
     fieldset: dbg_pwd_high
   - name: ana_trim_0
+    verified: false
     offset_bytes: 0xc
     size_bytes: 0x4
     fieldset: ana_trim_0
   - name: sw_usage_0
+    verified: true
     offset_bytes: 0x10
     size_bytes: 0x4
     fieldset: sw_usage_0
   - name: mac_low
+    verified: true
     offset_bytes: 0x14
     size_bytes: 0x4
     fieldset: mac_low
   - name: mac_high
+    verified: true
     offset_bytes: 0x18
     size_bytes: 0x4
     fieldset: mac_high
   - name: key_slot_0_w0
+    verified: false
     offset_bytes: 0x1c
     size_bytes: 0x4
     fieldset: key_slot_0_w0
   - name: key_slot_0_w1
+    verified: false
     offset_bytes: 0x20
     size_bytes: 0x4
     fieldset: key_slot_0_w1
   - name: key_slot_0_w2
+    verified: false
     offset_bytes: 0x24
     size_bytes: 0x4
     fieldset: key_slot_0_w2
   - name: key_slot_0_w3
+    verified: false
     offset_bytes: 0x28
     size_bytes: 0x4
     fieldset: key_slot_0_w3
   - name: key_slot_1_w0
+    verified: false
     offset_bytes: 0x2c
     size_bytes: 0x4
     fieldset: key_slot_1_w0
   - name: key_slot_1_w1
+    verified: false
     offset_bytes: 0x30
     size_bytes: 0x4
     fieldset: key_slot_1_w1
   - name: key_slot_1_w2
+    verified: false
     offset_bytes: 0x34
     size_bytes: 0x4
     fieldset: key_slot_1_w2
   - name: key_slot_1_w3
+    verified: false
     offset_bytes: 0x38
     size_bytes: 0x4
     fieldset: key_slot_1_w3
   - name: key_slot_2_w0
+    verified: false
     offset_bytes: 0x3c
     size_bytes: 0x4
     fieldset: key_slot_2_w0
   - name: key_slot_2_w1
+    verified: false
     offset_bytes: 0x40
     size_bytes: 0x4
     fieldset: key_slot_2_w1
   - name: key_slot_2_w2
+    verified: false
     offset_bytes: 0x44
     size_bytes: 0x4
     fieldset: key_slot_2_w2
   - name: key_slot_2_w3
+    verified: false
     offset_bytes: 0x48
     size_bytes: 0x4
     fieldset: key_slot_2_w3
   - name: key_slot_3_w0
+    verified: false
     offset_bytes: 0x4c
     size_bytes: 0x4
     fieldset: key_slot_3_w0
   - name: key_slot_3_w1
+    verified: false
     offset_bytes: 0x50
     size_bytes: 0x4
     fieldset: key_slot_3_w1
   - name: key_slot_3_w2
+    verified: false
     offset_bytes: 0x54
     size_bytes: 0x4
     fieldset: key_slot_3_w2
   - name: key_slot_3_w3
+    verified: false
     offset_bytes: 0x58
     size_bytes: 0x4
     fieldset: key_slot_3_w3
   - name: key_slot_4_w0
+    verified: false
     offset_bytes: 0x5c
     size_bytes: 0x4
     fieldset: key_slot_4_w0
   - name: key_slot_4_w1
+    verified: false
     offset_bytes: 0x60
     size_bytes: 0x4
     fieldset: key_slot_4_w1
   - name: usb_customer_vid_pid
     description: "USB VID & PID used in BootROM USB ISP mode, and in eflash_loader. If VID or PID is not empty, it's overriding chip VID&PID configuration."
+    verified: true
     offset_bytes: 0x64
     size_bytes: 0x4
     fieldset: usb_customer_vid_pid
   - name: usb_chip_vid_pid
+    verified: true
     offset_bytes: 0x68
     size_bytes: 0x4
     fieldset: usb_chip_vid_pid
   - name: key_slot_5_w0
+    verified: false
     offset_bytes: 0x6c
     size_bytes: 0x4
     fieldset: key_slot_5_w0
   - name: key_slot_5_w1
+    verified: false
     offset_bytes: 0x70
     size_bytes: 0x4
     fieldset: key_slot_5_w1
   - name: device_info
+    verified: false
     offset_bytes: 0x74
     size_bytes: 0x4
     fieldset: device_info
   - name: key_slot_5_w3
+    verified: false
     offset_bytes: 0x78
     size_bytes: 0x4
     fieldset: key_slot_5_w3
   - name: data_0_lock
+    verified: false
     offset_bytes: 0x7c
     size_bytes: 0x4
     fieldset: data_0_lock
