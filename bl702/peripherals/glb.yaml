@@ -49,14 +49,14 @@ registers:
     offset_bytes: 0x2c
     size_bytes: 0x4
     fieldset: cgen_cfg3
-  - name: MBIST_CTL
+  - name: mbist_ctl
     offset_bytes: 0x30
     size_bytes: 0x4
-    fieldset: MBIST_CTL
-  - name: MBIST_STAT
+    fieldset: mbist_ctl
+  - name: mbist_stat
     offset_bytes: 0x34
     size_bytes: 0x4
-    fieldset: MBIST_STAT
+    fieldset: mbist_stat
   - name: bmx_cfg1
     offset_bytes: 0x50
     size_bytes: 0x4
@@ -109,214 +109,215 @@ registers:
     offset_bytes: 0x80
     size_bytes: 0x4
     fieldset: glb_parm
-  - name: PDM_CLK_CTRL
+  - name: pdm_clk_ctrl
     offset_bytes: 0x84
     size_bytes: 0x4
-    fieldset: PDM_CLK_CTRL
-  - name: GPIO_USE_PSRAM__IO
+    fieldset: pdm_clk_ctrl
+  - name: gpio_use_psram_io
     offset_bytes: 0x88
     size_bytes: 0x4
-    fieldset: GPIO_USE_PSRAM__IO
-  - name: CPU_CLK_CFG
+    fieldset: gpio_use_psram_io
+    vendor_name: GPIO_USE_PSRAM__IO
+  - name: cpu_clk_cfg
     offset_bytes: 0x90
     size_bytes: 0x4
-    fieldset: CPU_CLK_CFG
-  - name: GPADC_32M_SRC_CTRL
+    fieldset: cpu_clk_cfg
+  - name: gpadc_32m_src_ctrl
     offset_bytes: 0xa4
     size_bytes: 0x4
-    fieldset: GPADC_32M_SRC_CTRL
-  - name: DIG32K_WAKEUP_CTRL
+    fieldset: gpadc_32m_src_ctrl
+  - name: dig32k_wakeup_ctrl
     offset_bytes: 0xa8
     size_bytes: 0x4
-    fieldset: DIG32K_WAKEUP_CTRL
-  - name: WIFI_BT_COEX_CTRL
+    fieldset: dig32k_wakeup_ctrl
+  - name: wifi_bt_coex_ctrl
     offset_bytes: 0xac
     size_bytes: 0x4
-    fieldset: WIFI_BT_COEX_CTRL
-  - name: BZ_COEX_CTRL
+    fieldset: wifi_bt_coex_ctrl
+  - name: bz_coex_ctrl
     offset_bytes: 0xb0
     size_bytes: 0x4
-    fieldset: BZ_COEX_CTRL
-  - name: UART_SIG_SEL_0
+    fieldset: bz_coex_ctrl
+  - name: uart_sig_sel_0
     offset_bytes: 0xc0
     size_bytes: 0x4
-    fieldset: UART_SIG_SEL_0
-  - name: DBG_SEL_LL
+    fieldset: uart_sig_sel_0
+  - name: dbg_sel_ll
     offset_bytes: 0xd0
     size_bytes: 0x4
-    fieldset: DBG_SEL_LL
-  - name: DBG_SEL_LH
+    fieldset: dbg_sel_ll
+  - name: dbg_sel_lh
     offset_bytes: 0xd4
     size_bytes: 0x4
-    fieldset: DBG_SEL_LH
-  - name: DBG_SEL_HL
+    fieldset: dbg_sel_lh
+  - name: dbg_sel_hl
     offset_bytes: 0xd8
     size_bytes: 0x4
-    fieldset: DBG_SEL_HL
-  - name: DBG_SEL_HH
+    fieldset: dbg_sel_hl
+  - name: dbg_sel_hh
     offset_bytes: 0xdc
     size_bytes: 0x4
-    fieldset: DBG_SEL_HH
+    fieldset: dbg_sel_hh
   - name: debug
     offset_bytes: 0xe0
     size_bytes: 0x4
     fieldset: debug
-  - name: GPIO_CFGCTL0
+  - name: gpio_cfgctl0
     offset_bytes: 0x100
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL0
-  - name: GPIO_CFGCTL1
+    fieldset: gpio_cfgctl0
+  - name: gpio_cfgctl1
     offset_bytes: 0x104
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL1
-  - name: GPIO_CFGCTL2
+    fieldset: gpio_cfgctl1
+  - name: gpio_cfgctl2
     offset_bytes: 0x108
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL2
-  - name: GPIO_CFGCTL3
+    fieldset: gpio_cfgctl2
+  - name: gpio_cfgctl3
     offset_bytes: 0x10c
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL3
-  - name: GPIO_CFGCTL4
+    fieldset: gpio_cfgctl3
+  - name: gpio_cfgctl4
     offset_bytes: 0x110
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL4
-  - name: GPIO_CFGCTL5
+    fieldset: gpio_cfgctl4
+  - name: gpio_cfgctl5
     offset_bytes: 0x114
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL5
-  - name: GPIO_CFGCTL6
+    fieldset: gpio_cfgctl5
+  - name: gpio_cfgctl6
     offset_bytes: 0x118
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL6
-  - name: GPIO_CFGCTL7
+    fieldset: gpio_cfgctl6
+  - name: gpio_cfgctl7
     offset_bytes: 0x11c
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL7
-  - name: GPIO_CFGCTL8
+    fieldset: gpio_cfgctl7
+  - name: gpio_cfgctl8
     offset_bytes: 0x120
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL8
-  - name: GPIO_CFGCTL9
+    fieldset: gpio_cfgctl8
+  - name: gpio_cfgctl9
     offset_bytes: 0x124
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL9
-  - name: GPIO_CFGCTL10
+    fieldset: gpio_cfgctl9
+  - name: gpio_cfgctl10
     offset_bytes: 0x128
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL10
-  - name: GPIO_CFGCTL11
+    fieldset: gpio_cfgctl10
+  - name: gpio_cfgctl11
     offset_bytes: 0x12c
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL11
-  - name: GPIO_CFGCTL12
+    fieldset: gpio_cfgctl11
+  - name: gpio_cfgctl12
     offset_bytes: 0x130
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL12
-  - name: GPIO_CFGCTL13
+    fieldset: gpio_cfgctl12
+  - name: gpio_cfgctl13
     offset_bytes: 0x134
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL13
-  - name: GPIO_CFGCTL14
+    fieldset: gpio_cfgctl13
+  - name: gpio_cfgctl14
     offset_bytes: 0x138
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL14
-  - name: GPIO_CFGCTL15
+    fieldset: gpio_cfgctl14
+  - name: gpio_cfgctl15
     offset_bytes: 0x13c
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL15
-  - name: GPIO_CFGCTL16
+    fieldset: gpio_cfgctl15
+  - name: gpio_cfgctl16
     offset_bytes: 0x140
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL16
-  - name: GPIO_CFGCTL17
+    fieldset: gpio_cfgctl16
+  - name: gpio_cfgctl17
     offset_bytes: 0x144
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL17
-  - name: GPIO_CFGCTL18
+    fieldset: gpio_cfgctl17
+  - name: gpio_cfgctl18
     offset_bytes: 0x148
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL18
-  - name: GPIO_CFGCTL30
+    fieldset: gpio_cfgctl18
+  - name: gpio_cfgctl30
     offset_bytes: 0x180
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL30
-  - name: GPIO_CFGCTL31
+    fieldset: gpio_cfgctl30
+  - name: gpio_cfgctl31
     offset_bytes: 0x184
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL31
-  - name: GPIO_CFGCTL32
+    fieldset: gpio_cfgctl31
+  - name: gpio_cfgctl32
     offset_bytes: 0x188
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL32
-  - name: GPIO_CFGCTL33
+    fieldset: gpio_cfgctl32
+  - name: gpio_cfgctl33
     offset_bytes: 0x18c
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL33
-  - name: GPIO_CFGCTL34
+    fieldset: gpio_cfgctl33
+  - name: gpio_cfgctl34
     offset_bytes: 0x190
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL34
-  - name: GPIO_CFGCTL35
+    fieldset: gpio_cfgctl34
+  - name: gpio_cfgctl35
     offset_bytes: 0x194
     size_bytes: 0x4
-    fieldset: GPIO_CFGCTL35
-  - name: GPIO_INT_MASK1
+    fieldset: gpio_cfgctl35
+  - name: gpio_int_mask1
     offset_bytes: 0x1a0
     size_bytes: 0x4
-    fieldset: GPIO_INT_MASK1
-  - name: GPIO_INT_STAT1
+    fieldset: gpio_int_mask1
+  - name: gpio_int_stat1
     offset_bytes: 0x1a8
     size_bytes: 0x4
-    fieldset: GPIO_INT_STAT1
-  - name: GPIO_INT_CLR1
+    fieldset: gpio_int_stat1
+  - name: gpio_int_clr1
     offset_bytes: 0x1b0
     size_bytes: 0x4
-    fieldset: GPIO_INT_CLR1
-  - name: GPIO_INT_MODE_SET1
+    fieldset: gpio_int_clr1
+  - name: gpio_int_mode_set1
     offset_bytes: 0x1c0
     size_bytes: 0x4
-    fieldset: GPIO_INT_MODE_SET1
-  - name: GPIO_INT_MODE_SET2
+    fieldset: gpio_int_mode_set1
+  - name: gpio_int_mode_set2
     offset_bytes: 0x1c4
     size_bytes: 0x4
-    fieldset: GPIO_INT_MODE_SET2
-  - name: GPIO_INT_MODE_SET3
+    fieldset: gpio_int_mode_set2
+  - name: gpio_int_mode_set3
     offset_bytes: 0x1c8
     size_bytes: 0x4
-    fieldset: GPIO_INT_MODE_SET3
-  - name: GPIO_INT_MODE_SET4
+    fieldset: gpio_int_mode_set3
+  - name: gpio_int_mode_set4
     offset_bytes: 0x1cc
     size_bytes: 0x4
-    fieldset: GPIO_INT_MODE_SET4
-  - name: GPIO_INT2_MASK1
+    fieldset: gpio_int_mode_set4
+  - name: gpio_int2_mask1
     offset_bytes: 0x1d0
     size_bytes: 0x4
-    fieldset: GPIO_INT2_MASK1
-  - name: GPIO_INT2_STAT1
+    fieldset: gpio_int2_mask1
+  - name: gpio_int2_stat1
     offset_bytes: 0x1d4
     size_bytes: 0x4
-    fieldset: GPIO_INT2_STAT1
-  - name: GPIO_INT2_CLR1
+    fieldset: gpio_int2_stat1
+  - name: gpio_int2_clr1
     offset_bytes: 0x1d8
     size_bytes: 0x4
-    fieldset: GPIO_INT2_CLR1
-  - name: GPIO_INT2_MODE_SET1
+    fieldset: gpio_int2_clr1
+  - name: gpio_int2_mode_set1
     offset_bytes: 0x1dc
     size_bytes: 0x4
-    fieldset: GPIO_INT2_MODE_SET1
-  - name: GPIO_INT2_MODE_SET2
+    fieldset: gpio_int2_mode_set1
+  - name: gpio_int2_mode_set2
     offset_bytes: 0x1e0
     size_bytes: 0x4
-    fieldset: GPIO_INT2_MODE_SET2
-  - name: GPIO_INT2_MODE_SET3
+    fieldset: gpio_int2_mode_set2
+  - name: gpio_int2_mode_set3
     offset_bytes: 0x1e4
     size_bytes: 0x4
-    fieldset: GPIO_INT2_MODE_SET3
-  - name: GPIO_INT2_MODE_SET4
+    fieldset: gpio_int2_mode_set3
+  - name: gpio_int2_mode_set4
     offset_bytes: 0x1e8
     size_bytes: 0x4
-    fieldset: GPIO_INT2_MODE_SET4
+    fieldset: gpio_int2_mode_set4
   - name: dll
     offset_bytes: 0x200
     size_bytes: 0x4
@@ -954,7 +955,7 @@ fieldsets:
         offset_bits: 0
         reset_value: 0x0
         access: rsvd
-  - name: MBIST_CTL
+  - name: mbist_ctl
     fields:
       - name: irom_mbist_mode
         size_bits: 1
@@ -996,7 +997,7 @@ fieldsets:
         offset_bits: 31
         reset_value: 0x0
         access: r/w
-  - name: MBIST_STAT
+  - name: mbist_stat
     fields:
       - name: irom_mbist_done
         size_bits: 1
@@ -1344,7 +1345,7 @@ fieldsets:
         offset_bits: 31
         reset_value: 0x0
         access: r/w
-  - name: PDM_CLK_CTRL
+  - name: pdm_clk_ctrl
     fields:
       - name: reg_pdm0_clk_div
         size_bits: 6
@@ -1366,7 +1367,7 @@ fieldsets:
         offset_bits: 8
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_USE_PSRAM__IO
+  - name: gpio_use_psram_io
     fields:
       - name: cfg_gpio_use_psram_io
         size_bits: 6
@@ -1378,7 +1379,7 @@ fieldsets:
         offset_bits: 6
         reset_value: 0x0
         access: rsvd
-  - name: CPU_CLK_CFG
+  - name: cpu_clk_cfg
     fields:
       - name: cpu_rtc_div
         size_bits: 17
@@ -1410,7 +1411,7 @@ fieldsets:
         offset_bits: 21
         reset_value: 0x0
         access: rsvd
-  - name: GPADC_32M_SRC_CTRL
+  - name: gpadc_32m_src_ctrl
     fields:
       - name: gpadc_32m_clk_div
         size_bits: 6
@@ -1437,7 +1438,7 @@ fieldsets:
         offset_bits: 9
         reset_value: 0x0
         access: rsvd
-  - name: DIG32K_WAKEUP_CTRL
+  - name: dig32k_wakeup_ctrl
     fields:
       - name: dig_32k_div
         size_bits: 11
@@ -1504,7 +1505,7 @@ fieldsets:
         offset_bits: 31
         reset_value: 0x0
         access: r/w
-  - name: WIFI_BT_COEX_CTRL
+  - name: wifi_bt_coex_ctrl
     fields:
       - name: coex_bt_channel
         size_bits: 7
@@ -1531,7 +1532,7 @@ fieldsets:
         offset_bits: 13
         reset_value: 0x0
         access: rsvd
-  - name: BZ_COEX_CTRL
+  - name: bz_coex_ctrl
     fields:
       - name: coex_en
         size_bits: 1
@@ -1633,7 +1634,7 @@ fieldsets:
         offset_bits: 28
         reset_value: 0x8
         access: r
-  - name: UART_SIG_SEL_0
+  - name: uart_sig_sel_0
     fields:
       - name: uart_sig_0_sel
         size_bits: 4
@@ -1675,28 +1676,28 @@ fieldsets:
         offset_bits: 28
         reset_value: 0x7
         access: r/w
-  - name: DBG_SEL_LL
+  - name: dbg_sel_ll
     fields:
       - name: reg_dbg_ll_ctrl
         size_bits: 32
         offset_bits: 0
         reset_value: 0x0
         access: r/w
-  - name: DBG_SEL_LH
+  - name: dbg_sel_lh
     fields:
       - name: reg_dbg_lh_ctrl
         size_bits: 32
         offset_bits: 0
         reset_value: 0x0
         access: r/w
-  - name: DBG_SEL_HL
+  - name: dbg_sel_hl
     fields:
       - name: reg_dbg_hl_ctrl
         size_bits: 32
         offset_bits: 0
         reset_value: 0x0
         access: r/w
-  - name: DBG_SEL_HH
+  - name: dbg_sel_hh
     fields:
       - name: reg_dbg_hh_ctrl
         size_bits: 32
@@ -1715,7 +1716,7 @@ fieldsets:
         offset_bits: 1
         reset_value: 0x0
         access: r
-  - name: GPIO_CFGCTL0
+  - name: gpio_cfgctl0
     fields:
       - name: reg_gpio_0_ie
         description: GPIO Input Enable
@@ -1809,7 +1810,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL1
+  - name: gpio_cfgctl1
     fields:
       - name: reg_gpio_2_ie
         description: GPIO Input Enable
@@ -1903,7 +1904,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL2
+  - name: gpio_cfgctl2
     fields:
       - name: reg_gpio_4_ie
         description: GPIO Input Enable
@@ -1997,7 +1998,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL3
+  - name: gpio_cfgctl3
     fields:
       - name: reg_gpio_6_ie
         description: GPIO Input Enable
@@ -2091,7 +2092,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL4
+  - name: gpio_cfgctl4
     fields:
       - name: reg_gpio_8_ie
         description: GPIO Input Enable
@@ -2189,7 +2190,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL5
+  - name: gpio_cfgctl5
     fields:
       - name: reg_gpio_10_ie
         description: "GPIO Input Enable (Useless, IE depend on reg_aon_pad_ie_smt[1] :
@@ -2287,7 +2288,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL6
+  - name: gpio_cfgctl6
     fields:
       - name: reg_gpio_12_ie
         description: "GPIO Input Enable (Useless, IE depend on reg_aon_pad_ie_smt[3] :
@@ -2385,7 +2386,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL7
+  - name: gpio_cfgctl7
     fields:
       - name: reg_gpio_14_ie
         description: GPIO Input Enable
@@ -2479,7 +2480,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL8
+  - name: gpio_cfgctl8
     fields:
       - name: reg_gpio_16_ie
         description: GPIO Input Enable
@@ -2575,7 +2576,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL9
+  - name: gpio_cfgctl9
     fields:
       - name: reg_gpio_18_ie
         description: GPIO Input Enable
@@ -2669,7 +2670,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL10
+  - name: gpio_cfgctl10
     fields:
       - name: reg_gpio_20_ie
         description: GPIO Input Enable
@@ -2763,7 +2764,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL11
+  - name: gpio_cfgctl11
     fields:
       - name: reg_gpio_22_ie
         description: GPIO Input Enable
@@ -2857,7 +2858,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL12
+  - name: gpio_cfgctl12
     fields:
       - name: reg_gpio_24_ie
         description: GPIO Input Enable
@@ -2951,7 +2952,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL13
+  - name: gpio_cfgctl13
     fields:
       - name: reg_gpio_26_ie
         description: GPIO Input Enable
@@ -3045,7 +3046,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL14
+  - name: gpio_cfgctl14
     fields:
       - name: reg_gpio_28_ie
         description: GPIO Input Enable
@@ -3139,7 +3140,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL15
+  - name: gpio_cfgctl15
     fields:
       - name: reg_gpio_30_ie
         description: GPIO Input Enable
@@ -3233,7 +3234,7 @@ fieldsets:
         offset_bits: 29
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL16
+  - name: gpio_cfgctl16
     fields:
       - name: reg_gpio_32_ie
         size_bits: 1
@@ -3295,7 +3296,7 @@ fieldsets:
         offset_bits: 22
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL17
+  - name: gpio_cfgctl17
     fields:
       - name: reg_gpio_34_ie
         size_bits: 1
@@ -3357,7 +3358,7 @@ fieldsets:
         offset_bits: 22
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL18
+  - name: gpio_cfgctl18
     fields:
       - name: reg_gpio_36_ie
         size_bits: 1
@@ -3419,7 +3420,7 @@ fieldsets:
         offset_bits: 22
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL30
+  - name: gpio_cfgctl30
     fields:
       - name: reg_gpio_0_i
         description: Register Controlled GPIO Input value
@@ -3613,14 +3614,14 @@ fieldsets:
         offset_bits: 31
         reset_value: 0x0
         access: r
-  - name: GPIO_CFGCTL31
+  - name: gpio_cfgctl31
     fields:
       - name: reserved_0_31
         size_bits: 32
         offset_bits: 0
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL32
+  - name: gpio_cfgctl32
     fields:
       - name: reg_gpio_0_o
         description: Register Controlled GPIO Output Value
@@ -3814,14 +3815,14 @@ fieldsets:
         offset_bits: 31
         reset_value: 0x0
         access: r/w
-  - name: GPIO_CFGCTL33
+  - name: gpio_cfgctl33
     fields:
       - name: reserved_0_31
         size_bits: 32
         offset_bits: 0
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_CFGCTL34
+  - name: gpio_cfgctl34
     fields:
       - name: reg_gpio_0_oe
         description: Register Controlled GPIO Output Enable (Used when GPIO Function
@@ -4047,7 +4048,7 @@ fieldsets:
         offset_bits: 31
         reset_value: 0x0
         access: r/w
-  - name: GPIO_CFGCTL35
+  - name: gpio_cfgctl35
     fields:
       - name: reserved_0_31
         description: reg_gpio_int_mask[31:0]
@@ -4055,14 +4056,14 @@ fieldsets:
         offset_bits: 0
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_INT_MASK1
+  - name: gpio_int_mask1
     fields:
       - name: reg_gpio_int_mask1
         size_bits: 32
         offset_bits: 0
         reset_value: 0xffffffff
         access: r/w
-  - name: GPIO_INT_STAT1
+  - name: gpio_int_stat1
     fields:
       - name: gpio_int_stat1
         description: gpio_int_stat[31:0]
@@ -4070,7 +4071,7 @@ fieldsets:
         offset_bits: 0
         reset_value: 0x0
         access: r
-  - name: GPIO_INT_CLR1
+  - name: gpio_int_clr1
     fields:
       - name: reg_gpio_int_clr1
         description: reg_gpio_int_clr[31:0]
@@ -4078,7 +4079,7 @@ fieldsets:
         offset_bits: 0
         reset_value: 0x0
         access: r/w
-  - name: GPIO_INT_MODE_SET1
+  - name: gpio_int_mode_set1
     fields:
       - name: reg_gpio_int_mode_set1
         description: "{reg_gpio9_int_mode[2:0], …….
@@ -4092,7 +4093,7 @@ fieldsets:
         offset_bits: 30
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_INT_MODE_SET2
+  - name: gpio_int_mode_set2
     fields:
       - name: reg_gpio_int_mode_set2
         description: "{reg_gpio19_int_mode[2:0], …….
@@ -4106,7 +4107,7 @@ fieldsets:
         offset_bits: 30
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_INT_MODE_SET3
+  - name: gpio_int_mode_set3
     fields:
       - name: reg_gpio_int_mode_set3
         description: "{reg_gpio29_int_mode[2:0], …….
@@ -4120,7 +4121,7 @@ fieldsets:
         offset_bits: 30
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_INT_MODE_SET4
+  - name: gpio_int_mode_set4
     fields:
       - name: reg_gpio_int_mode_set4
         description: "{reg_gpio31_int_mode[2:0],reg_gpio30_int_mode}"
@@ -4133,7 +4134,7 @@ fieldsets:
         offset_bits: 6
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_INT2_MASK1
+  - name: gpio_int2_mask1
     fields:
       - name: reg_gpio_int2_mask1
         description: reg_gpio_int2_mask[31:0]
@@ -4141,7 +4142,7 @@ fieldsets:
         offset_bits: 0
         reset_value: 0xffffffff
         access: r/w
-  - name: GPIO_INT2_STAT1
+  - name: gpio_int2_stat1
     fields:
       - name: gpio_int2_stat1
         description: gpio_int2_stat[31:0]
@@ -4149,7 +4150,7 @@ fieldsets:
         offset_bits: 0
         reset_value: 0x0
         access: r
-  - name: GPIO_INT2_CLR1
+  - name: gpio_int2_clr1
     fields:
       - name: reg_gpio_int2_clr1
         description: reg_gpio_int2_clr[31:0]
@@ -4157,7 +4158,7 @@ fieldsets:
         offset_bits: 0
         reset_value: 0x0
         access: r/w
-  - name: GPIO_INT2_MODE_SET1
+  - name: gpio_int2_mode_set1
     fields:
       - name: reg_gpio_int2_mode_set1
         description: "{reg_gpio9_int2_mode[2:0], …….
@@ -4171,7 +4172,7 @@ fieldsets:
         offset_bits: 30
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_INT2_MODE_SET2
+  - name: gpio_int2_mode_set2
     fields:
       - name: reg_gpio_int2_mode_set2
         description: "{reg_gpio19_int2_mode[2:0], …….
@@ -4185,7 +4186,7 @@ fieldsets:
         offset_bits: 30
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_INT2_MODE_SET3
+  - name: gpio_int2_mode_set3
     fields:
       - name: reg_gpio_int2_mode_set3
         description: "{reg_gpio29_int2_mode[2:0], …….
@@ -4199,7 +4200,7 @@ fieldsets:
         offset_bits: 30
         reset_value: 0x0
         access: rsvd
-  - name: GPIO_INT2_MODE_SET4
+  - name: gpio_int2_mode_set4
     fields:
       - name: reg_gpio_int2_mode_set4
         description: "{reg_gpio31_int2_mode[2:0],reg_gpio30_int2_mode}"
