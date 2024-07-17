@@ -2,371 +2,463 @@ name: glb
 size_bytes: 0xf10
 registers:
   - name: clk_cfg0
+    verified: false
     offset_bytes: 0x0
     size_bytes: 0x4
     fieldset: clk_cfg0
   - name: clk_cfg1
+    verified: false
     offset_bytes: 0x4
     size_bytes: 0x4
     fieldset: clk_cfg1
   - name: clk_cfg2
+    verified: false
     offset_bytes: 0x8
     size_bytes: 0x4
     fieldset: clk_cfg2
   - name: clk_cfg3
+    verified: false
     offset_bytes: 0xc
     size_bytes: 0x4
     fieldset: clk_cfg3
   - name: swrst_cfg0
+    verified: false
     offset_bytes: 0x10
     size_bytes: 0x4
     fieldset: swrst_cfg0
   - name: swrst_cfg1
+    verified: false
     offset_bytes: 0x14
     size_bytes: 0x4
     fieldset: swrst_cfg1
   - name: swrst_cfg2
+    verified: false
     offset_bytes: 0x18
     size_bytes: 0x4
     fieldset: swrst_cfg2
   - name: swrst_cfg3
+    verified: false
     offset_bytes: 0x1c
     size_bytes: 0x4
     fieldset: swrst_cfg3
   - name: cgen_cfg0
+    verified: false
     offset_bytes: 0x20
     size_bytes: 0x4
     fieldset: cgen_cfg0
   - name: cgen_cfg1
+    verified: false
     offset_bytes: 0x24
     size_bytes: 0x4
     fieldset: cgen_cfg1
   - name: cgen_cfg2
+    verified: false
     offset_bytes: 0x28
     size_bytes: 0x4
     fieldset: cgen_cfg2
   - name: cgen_cfg3
+    verified: false
     offset_bytes: 0x2c
     size_bytes: 0x4
     fieldset: cgen_cfg3
   - name: mbist_ctl
+    verified: false
     offset_bytes: 0x30
     size_bytes: 0x4
     fieldset: mbist_ctl
   - name: mbist_stat
+    verified: false
     offset_bytes: 0x34
     size_bytes: 0x4
     fieldset: mbist_stat
   - name: bmx_cfg1
+    verified: false
     offset_bytes: 0x50
     size_bytes: 0x4
     fieldset: bmx_cfg1
   - name: bmx_cfg2
+    verified: false
     offset_bytes: 0x54
     size_bytes: 0x4
     fieldset: bmx_cfg2
   - name: bmx_err_addr
+    verified: false
     offset_bytes: 0x58
     size_bytes: 0x4
     fieldset: bmx_err_addr
   - name: bmx_dbg_out
+    verified: false
     offset_bytes: 0x5c
     size_bytes: 0x4
     fieldset: bmx_dbg_out
   - name: rsv0
+    verified: false
     offset_bytes: 0x60
     size_bytes: 0x4
     fieldset: rsv0
   - name: rsv1
+    verified: false
     offset_bytes: 0x64
     size_bytes: 0x4
     fieldset: rsv1
   - name: rsv2
+    verified: false
     offset_bytes: 0x68
     size_bytes: 0x4
     fieldset: rsv2
   - name: rsv3
+    verified: false
     offset_bytes: 0x6c
     size_bytes: 0x4
     fieldset: rsv3
   - name: sram_ret
+    verified: false
     offset_bytes: 0x70
     size_bytes: 0x4
     fieldset: sram_ret
   - name: sram_slp
+    verified: false
     offset_bytes: 0x74
     size_bytes: 0x4
     fieldset: sram_slp
   - name: sram_parm
+    verified: false
     offset_bytes: 0x78
     size_bytes: 0x4
     fieldset: sram_parm
   - name: seam_misc
+    verified: false
     offset_bytes: 0x7c
     size_bytes: 0x4
     fieldset: seam_misc
   - name: glb_parm
+    verified: false
     offset_bytes: 0x80
     size_bytes: 0x4
     fieldset: glb_parm
   - name: pdm_clk_ctrl
+    verified: false
     offset_bytes: 0x84
     size_bytes: 0x4
     fieldset: pdm_clk_ctrl
   - name: gpio_use_psram_io
+    verified: false
     offset_bytes: 0x88
     size_bytes: 0x4
     fieldset: gpio_use_psram_io
     vendor_name: GPIO_USE_PSRAM__IO
   - name: cpu_clk_cfg
+    verified: false
     offset_bytes: 0x90
     size_bytes: 0x4
     fieldset: cpu_clk_cfg
   - name: gpadc_32m_src_ctrl
+    verified: false
     offset_bytes: 0xa4
     size_bytes: 0x4
     fieldset: gpadc_32m_src_ctrl
   - name: dig32k_wakeup_ctrl
+    verified: false
     offset_bytes: 0xa8
     size_bytes: 0x4
     fieldset: dig32k_wakeup_ctrl
   - name: wifi_bt_coex_ctrl
+    verified: false
     offset_bytes: 0xac
     size_bytes: 0x4
     fieldset: wifi_bt_coex_ctrl
   - name: bz_coex_ctrl
+    verified: false
     offset_bytes: 0xb0
     size_bytes: 0x4
     fieldset: bz_coex_ctrl
   - name: uart_sig_sel_0
+    verified: false
     offset_bytes: 0xc0
     size_bytes: 0x4
     fieldset: uart_sig_sel_0
   - name: dbg_sel_ll
+    verified: false
     offset_bytes: 0xd0
     size_bytes: 0x4
     fieldset: dbg_sel_ll
   - name: dbg_sel_lh
+    verified: false
     offset_bytes: 0xd4
     size_bytes: 0x4
     fieldset: dbg_sel_lh
   - name: dbg_sel_hl
+    verified: false
     offset_bytes: 0xd8
     size_bytes: 0x4
     fieldset: dbg_sel_hl
   - name: dbg_sel_hh
+    verified: false
     offset_bytes: 0xdc
     size_bytes: 0x4
     fieldset: dbg_sel_hh
   - name: debug
+    verified: false
     offset_bytes: 0xe0
     size_bytes: 0x4
     fieldset: debug
   - name: gpio_cfgctl0
+    verified: false
     offset_bytes: 0x100
     size_bytes: 0x4
     fieldset: gpio_cfgctl0
   - name: gpio_cfgctl1
+    verified: false
     offset_bytes: 0x104
     size_bytes: 0x4
     fieldset: gpio_cfgctl1
   - name: gpio_cfgctl2
+    verified: false
     offset_bytes: 0x108
     size_bytes: 0x4
     fieldset: gpio_cfgctl2
   - name: gpio_cfgctl3
+    verified: false
     offset_bytes: 0x10c
     size_bytes: 0x4
     fieldset: gpio_cfgctl3
   - name: gpio_cfgctl4
+    verified: false
     offset_bytes: 0x110
     size_bytes: 0x4
     fieldset: gpio_cfgctl4
   - name: gpio_cfgctl5
+    verified: false
     offset_bytes: 0x114
     size_bytes: 0x4
     fieldset: gpio_cfgctl5
   - name: gpio_cfgctl6
+    verified: false
     offset_bytes: 0x118
     size_bytes: 0x4
     fieldset: gpio_cfgctl6
   - name: gpio_cfgctl7
+    verified: false
     offset_bytes: 0x11c
     size_bytes: 0x4
     fieldset: gpio_cfgctl7
   - name: gpio_cfgctl8
+    verified: false
     offset_bytes: 0x120
     size_bytes: 0x4
     fieldset: gpio_cfgctl8
   - name: gpio_cfgctl9
+    verified: false
     offset_bytes: 0x124
     size_bytes: 0x4
     fieldset: gpio_cfgctl9
   - name: gpio_cfgctl10
+    verified: false
     offset_bytes: 0x128
     size_bytes: 0x4
     fieldset: gpio_cfgctl10
   - name: gpio_cfgctl11
+    verified: false
     offset_bytes: 0x12c
     size_bytes: 0x4
     fieldset: gpio_cfgctl11
   - name: gpio_cfgctl12
+    verified: false
     offset_bytes: 0x130
     size_bytes: 0x4
     fieldset: gpio_cfgctl12
   - name: gpio_cfgctl13
+    verified: false
     offset_bytes: 0x134
     size_bytes: 0x4
     fieldset: gpio_cfgctl13
   - name: gpio_cfgctl14
+    verified: false
     offset_bytes: 0x138
     size_bytes: 0x4
     fieldset: gpio_cfgctl14
   - name: gpio_cfgctl15
+    verified: false
     offset_bytes: 0x13c
     size_bytes: 0x4
     fieldset: gpio_cfgctl15
   - name: gpio_cfgctl16
+    verified: false
     offset_bytes: 0x140
     size_bytes: 0x4
     fieldset: gpio_cfgctl16
   - name: gpio_cfgctl17
+    verified: false
     offset_bytes: 0x144
     size_bytes: 0x4
     fieldset: gpio_cfgctl17
   - name: gpio_cfgctl18
+    verified: false
     offset_bytes: 0x148
     size_bytes: 0x4
     fieldset: gpio_cfgctl18
   - name: gpio_cfgctl30
+    verified: false
     offset_bytes: 0x180
     size_bytes: 0x4
     fieldset: gpio_cfgctl30
   - name: gpio_cfgctl31
+    verified: false
     offset_bytes: 0x184
     size_bytes: 0x4
     fieldset: gpio_cfgctl31
   - name: gpio_cfgctl32
+    verified: false
     offset_bytes: 0x188
     size_bytes: 0x4
     fieldset: gpio_cfgctl32
   - name: gpio_cfgctl33
+    verified: false
     offset_bytes: 0x18c
     size_bytes: 0x4
     fieldset: gpio_cfgctl33
   - name: gpio_cfgctl34
+    verified: false
     offset_bytes: 0x190
     size_bytes: 0x4
     fieldset: gpio_cfgctl34
   - name: gpio_cfgctl35
+    verified: false
     offset_bytes: 0x194
     size_bytes: 0x4
     fieldset: gpio_cfgctl35
   - name: gpio_int_mask1
+    verified: false
     offset_bytes: 0x1a0
     size_bytes: 0x4
     fieldset: gpio_int_mask1
   - name: gpio_int_stat1
+    verified: false
     offset_bytes: 0x1a8
     size_bytes: 0x4
     fieldset: gpio_int_stat1
   - name: gpio_int_clr1
+    verified: false
     offset_bytes: 0x1b0
     size_bytes: 0x4
     fieldset: gpio_int_clr1
   - name: gpio_int_mode_set1
+    verified: false
     offset_bytes: 0x1c0
     size_bytes: 0x4
     fieldset: gpio_int_mode_set1
   - name: gpio_int_mode_set2
+    verified: false
     offset_bytes: 0x1c4
     size_bytes: 0x4
     fieldset: gpio_int_mode_set2
   - name: gpio_int_mode_set3
+    verified: false
     offset_bytes: 0x1c8
     size_bytes: 0x4
     fieldset: gpio_int_mode_set3
   - name: gpio_int_mode_set4
+    verified: false
     offset_bytes: 0x1cc
     size_bytes: 0x4
     fieldset: gpio_int_mode_set4
   - name: gpio_int2_mask1
+    verified: false
     offset_bytes: 0x1d0
     size_bytes: 0x4
     fieldset: gpio_int2_mask1
   - name: gpio_int2_stat1
+    verified: false
     offset_bytes: 0x1d4
     size_bytes: 0x4
     fieldset: gpio_int2_stat1
   - name: gpio_int2_clr1
+    verified: false
     offset_bytes: 0x1d8
     size_bytes: 0x4
     fieldset: gpio_int2_clr1
   - name: gpio_int2_mode_set1
+    verified: false
     offset_bytes: 0x1dc
     size_bytes: 0x4
     fieldset: gpio_int2_mode_set1
   - name: gpio_int2_mode_set2
+    verified: false
     offset_bytes: 0x1e0
     size_bytes: 0x4
     fieldset: gpio_int2_mode_set2
   - name: gpio_int2_mode_set3
+    verified: false
     offset_bytes: 0x1e4
     size_bytes: 0x4
     fieldset: gpio_int2_mode_set3
   - name: gpio_int2_mode_set4
+    verified: false
     offset_bytes: 0x1e8
     size_bytes: 0x4
     fieldset: gpio_int2_mode_set4
   - name: dll
+    verified: false
     offset_bytes: 0x200
     size_bytes: 0x4
     fieldset: dll
   - name: led_driver
+    verified: false
     offset_bytes: 0x224
     size_bytes: 0x4
     fieldset: led_driver
   - name: usb_xcvr
+    verified: false
     offset_bytes: 0x228
     size_bytes: 0x4
     fieldset: usb_xcvr
   - name: usb_xcvr_config
+    verified: false
     offset_bytes: 0x22c
     size_bytes: 0x4
     fieldset: usb_xcvr_config
   - name: gpdac_ctrl
+    verified: false
     offset_bytes: 0x308
     size_bytes: 0x4
     fieldset: gpdac_ctrl
   - name: gpdac_actrl
+    verified: false
     offset_bytes: 0x30c
     size_bytes: 0x4
     fieldset: gpdac_actrl
   - name: gpdac_bctrl
+    verified: false
     offset_bytes: 0x310
     size_bytes: 0x4
     fieldset: gpdac_bctrl
   - name: gpdac_data
+    verified: false
     offset_bytes: 0x314
     size_bytes: 0x4
     fieldset: gpdac_data
   - name: chip_revision
+    verified: false
     offset_bytes: 0xe00
     size_bytes: 0x4
     fieldset: chip_revision
   - name: tzc_glb_ctrl_0
+    verified: false
     offset_bytes: 0xf00
     size_bytes: 0x4
     fieldset: tzc_glb_ctrl_0
   - name: tzc_glb_ctrl_1
+    verified: false
     offset_bytes: 0xf04
     size_bytes: 0x4
     fieldset: tzc_glb_ctrl_1
   - name: tzc_glb_ctrl_2
+    verified: false
     offset_bytes: 0xf08
     size_bytes: 0x4
     fieldset: tzc_glb_ctrl_2
   - name: tzc_glb_ctrl_3
+    verified: false
     offset_bytes: 0xf0c
     size_bytes: 0x4
     fieldset: tzc_glb_ctrl_3
