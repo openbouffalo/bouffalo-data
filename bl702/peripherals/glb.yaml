@@ -142,11 +142,11 @@ registers:
     size_bytes: 0x4
     fieldset: pdm_clk_ctrl
   - name: gpio_use_psram_io
+    vendor_name: GPIO_USE_PSRAM__IO
     verified: false
     offset_bytes: 0x88
     size_bytes: 0x4
     fieldset: gpio_use_psram_io
-    vendor_name: GPIO_USE_PSRAM__IO
   - name: cpu_clk_cfg
     verified: false
     offset_bytes: 0x90
