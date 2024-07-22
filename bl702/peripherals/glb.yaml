@@ -1460,9 +1460,41 @@ fieldsets:
         reset_value: 0x0
         access: rsvd
   - name: gpio_use_psram_io
+    # TODO: This might also sign that this IO is used for internal Flash. Needs to verify.
     fields:
-      - name: cfg_gpio_use_psram_io
-        size_bits: 6
+      - name: gpio_23_use_psram_io
+        description: "Pin 23 is used for pSRAM IO"
+        size_bits: 1
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+      - name: gpio_24_use_psram_io
+        description: "Pin 24 is used for pSRAM IO"
+        size_bits: 1
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+      - name: gpio_25_use_psram_io
+        description: "Pin 25 is used for pSRAM IO"
+        size_bits: 1
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+      - name: gpio_26_use_psram_io
+        description: "Pin 26 is used for pSRAM IO"
+        size_bits: 1
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+      - name: gpio_27_use_psram_io
+        description: "Pin 27 is used for pSRAM IO"
+        size_bits: 1
+        offset_bits: 0
+        reset_value: 0x0
+        access: r/w
+      - name: gpio_28_use_psram_io
+        description: "Pin 28 is used for pSRAM IO"
+        size_bits: 1
         offset_bits: 0
         reset_value: 0x0
         access: r/w
