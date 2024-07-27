@@ -1,0 +1,15 @@
+name: bl702
+
+# TODO: Interrupts
+# Todo: Memories
+
+peripherals:
+  - name: glb
+    peripheral: glb
+    address: 0x40000000
+    size: 0x1000
+    description: "Global control register"
+  - name: ef_data
+    peripheral: ef_data
+    address: 0x40007000
+    size: 0x1000
