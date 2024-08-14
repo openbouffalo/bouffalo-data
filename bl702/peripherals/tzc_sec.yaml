@@ -1,0 +1,221 @@
+name: tzc_sec
+description: Trust Zone Controller - Secure Mode
+size_bytes: 0x54
+registers:
+  - name: tzc_rom_ctrl
+    verified: false
+    description: ""
+    offset_bytes: 0x40
+    size_bytes: 0x4
+    fieldset: tzc_rom_ctrl
+  - name: tzc_rom0_r0
+    verified: false
+    description: ""
+    offset_bytes: 0x44
+    size_bytes: 0x4
+    fieldset: tzc_rom0_r0
+  - name: tzc_rom0_r1
+    verified: false
+    description: ""
+    offset_bytes: 0x48
+    size_bytes: 0x4
+    fieldset: tzc_rom0_r1
+  - name: tzc_rom1_r0
+    verified: false
+    description: ""
+    offset_bytes: 0x4c
+    size_bytes: 0x4
+    fieldset: tzc_rom1_r0
+  - name: tzc_rom1_r1
+    verified: false
+    description: ""
+    offset_bytes: 0x50
+    size_bytes: 0x4
+    fieldset: tzc_rom1_r1
+fieldsets:
+  - name: tzc_rom_ctrl
+    description: ""
+    fields:
+      - name: tzc_rom0_r0_id0_en
+        description: ""
+        size_bits: 1
+        offset_bits: 0
+        reset_value: 0x1
+        access: r/w
+      - name: tzc_rom0_r1_id0_en
+        description: ""
+        size_bits: 1
+        offset_bits: 1
+        reset_value: 0x1
+        access: r/w
+      - name: tzc_rom1_r0_id0_en
+        description: ""
+        size_bits: 1
+        offset_bits: 2
+        reset_value: 0x1
+        access: r/w
+      - name: tzc_rom1_r1_id0_en
+        description: ""
+        size_bits: 1
+        offset_bits: 3
+        reset_value: 0x1
+        access: r/w
+      - name: reserved_4_7
+        description: ""
+        size_bits: 4
+        offset_bits: 4
+        reset_value: 0x0
+        access: rsvd
+      - name: tzc_rom0_r0_id1_en
+        description: ""
+        size_bits: 1
+        offset_bits: 8
+        reset_value: 0x1
+        access: r/w
+      - name: tzc_rom0_r1_id1_en
+        description: ""
+        size_bits: 1
+        offset_bits: 9
+        reset_value: 0x1
+        access: r/w
+      - name: tzc_rom1_r0_id1_en
+        description: ""
+        size_bits: 1
+        offset_bits: 10
+        reset_value: 0x1
+        access: r/w
+      - name: tzc_rom1_r1_id1_en
+        description: ""
+        size_bits: 1
+        offset_bits: 11
+        reset_value: 0x1
+        access: r/w
+      - name: reserved_12_15
+        description: ""
+        size_bits: 4
+        offset_bits: 12
+        reset_value: 0x0
+        access: rsvd
+      - name: tzc_rom0_r0_en
+        description: ""
+        size_bits: 1
+        offset_bits: 16
+        reset_value: 0x0
+        access: r/w
+      - name: tzc_rom0_r1_en
+        description: ""
+        size_bits: 1
+        offset_bits: 17
+        reset_value: 0x0
+        access: r/w
+      - name: tzc_rom1_r0_en
+        description: ""
+        size_bits: 1
+        offset_bits: 18
+        reset_value: 0x0
+        access: r/w
+      - name: tzc_rom1_r1_en
+        description: ""
+        size_bits: 1
+        offset_bits: 19
+        reset_value: 0x0
+        access: r/w
+      - name: reserved_20_23
+        description: ""
+        size_bits: 4
+        offset_bits: 20
+        reset_value: 0x0
+        access: rsvd
+      - name: tzc_rom0_r0_lock
+        description: "Once set to 1, it is not possible to set it to 0. Reset sets it to 0."
+        size_bits: 1
+        offset_bits: 24
+        reset_value: 0x0
+        access: r/w
+      - name: tzc_rom0_r1_lock
+        description: "Once set to 1, it is not possible to set it to 0. Reset sets it to 0."
+        size_bits: 1
+        offset_bits: 25
+        reset_value: 0x0
+        access: r/w
+      - name: tzc_rom1_r0_lock
+        description: "Once set to 1, it is not possible to set it to 0. Reset sets it to 0."
+        size_bits: 1
+        offset_bits: 26
+        reset_value: 0x0
+        access: r/w
+      - name: tzc_rom1_r1_lock
+        description: "Once set to 1, it is not possible to set it to 0. Reset sets it to 0."
+        size_bits: 1
+        offset_bits: 27
+        reset_value: 0x0
+        access: r/w
+      - name: tzc_sboot_done
+        description: ""
+        size_bits: 4
+        offset_bits: 28
+        reset_value: 0x0
+        access: r/w
+  - name: tzc_rom0_r0
+    description: ""
+    fields:
+      - name: tzc_rom0_r0_end
+        description: |-
+          Last page to lock within ROM0 Region 0.
+          Base address: 0x21000000, page size: 1024 bytes.
+          Example: To lock up to 0x21017000, (0x21017000 - 0x21000000 - 1) / 1024 => 91
+        size_bits: 16
+        offset_bits: 0
+        reset_value: 0xffff
+        access: r/w
+      - name: tzc_rom0_r0_start
+        description: ""
+        size_bits: 16
+        offset_bits: 16
+        reset_value: 0x0
+        access: r/w
+  - name: tzc_rom0_r1
+    description: ""
+    fields:
+      - name: tzc_rom0_r1_end
+        description: ""
+        size_bits: 16
+        offset_bits: 0
+        reset_value: 0xffff
+        access: r/w
+      - name: tzc_rom0_r1_start
+        description: ""
+        size_bits: 16
+        offset_bits: 16
+        reset_value: 0x0
+        access: r/w
+  - name: tzc_rom1_r0
+    description: ""
+    fields:
+      - name: tzc_rom1_r0_end
+        description: ""
+        size_bits: 16
+        offset_bits: 0
+        reset_value: 0xffff
+        access: r/w
+      - name: tzc_rom1_r0_start
+        description: ""
+        size_bits: 16
+        offset_bits: 16
+        reset_value: 0x0
+        access: r/w
+  - name: tzc_rom1_r1
+    description: ""
+    fields:
+      - name: tzc_rom1_r1_end
+        description: ""
+        size_bits: 16
+        offset_bits: 0
+        reset_value: 0xffff
+        access: r/w
+      - name: tzc_rom1_r1_start
+        description: ""
+        size_bits: 16
+        offset_bits: 16
+        reset_value: 0x0
+        access: r/w
