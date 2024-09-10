@@ -13,3 +13,9 @@ peripherals:
     peripheral: ef_data
     address: 0x40007000
     size: 0x1000
+    description: "eFuse data"
+  - name: l1c
+    peripheral: l1c
+    address: 0x40009000
+    size: 0x1000
+    description: L1 cache config
