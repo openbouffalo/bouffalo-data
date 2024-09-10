@@ -32,7 +32,7 @@ registers:
     size_bytes: 0x4
     fieldset: swrst_cfg1
   - name: swrst_cfg2
-    verified: false
+    verified: true
     offset_bytes: 0x18
     size_bytes: 0x4
     fieldset: swrst_cfg2
@@ -948,11 +948,13 @@ fieldsets:
   - name: swrst_cfg2
     fields:
       - name: reg_ctrl_pwron_rst
+        description: "Most complete reset of the chip"
         size_bits: 1
         offset_bits: 0
         reset_value: 0x0
         access: r/w
       - name: reg_ctrl_cpu_reset
+        description: "Reset CPU cores"
         size_bits: 1
         offset_bits: 1
         reset_value: 0x0
