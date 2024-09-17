@@ -307,11 +307,11 @@ registers:
     offset_bytes: 0x184
     size_bytes: 0x4
     fieldset: gpio_cfgctl31
-  - name: gpio_cfgctl32
+  - name: gpio_output_state
     verified: false
     offset_bytes: 0x188
     size_bytes: 0x4
-    fieldset: gpio_cfgctl32
+    fieldset: gpio_output_state
   - name: gpio_cfgctl33
     verified: false
     offset_bytes: 0x18c
@@ -3747,196 +3747,196 @@ fieldsets:
         offset_bits: 0
         reset_value: 0x0
         access: rsvd
-  - name: gpio_cfgctl32
+  - name: gpio_output_state
     fields:
-      - name: reg_gpio_0_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_0
+        description: Output state of GPIO 0, set for high, clear for low
         size_bits: 1
         offset_bits: 0
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_1_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_1
+        description: Output state of GPIO 1, set for high, clear for low
         size_bits: 1
         offset_bits: 1
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_2_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_2
+        description: Output state of GPIO 2, set for high, clear for low
         size_bits: 1
         offset_bits: 2
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_3_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_3
+        description: Output state of GPIO 3, set for high, clear for low
         size_bits: 1
         offset_bits: 3
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_4_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_4
+        description: Output state of GPIO 4, set for high, clear for low
         size_bits: 1
         offset_bits: 4
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_5_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_5
+        description: Output state of GPIO 5, set for high, clear for low
         size_bits: 1
         offset_bits: 5
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_6_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_6
+        description: Output state of GPIO 6, set for high, clear for low
         size_bits: 1
         offset_bits: 6
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_7_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_7
+        description: Output state of GPIO 7, set for high, clear for low
         size_bits: 1
         offset_bits: 7
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_8_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_8
+        description: Output state of GPIO 8, set for high, clear for low
         size_bits: 1
         offset_bits: 8
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_9_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_9
+        description: Output state of GPIO 9, set for high, clear for low
         size_bits: 1
         offset_bits: 9
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_10_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_10
+        description: Output state of GPIO 10, set for high, clear for low
         size_bits: 1
         offset_bits: 10
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_11_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_11
+        description: Output state of GPIO 11, set for high, clear for low
         size_bits: 1
         offset_bits: 11
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_12_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_12
+        description: Output state of GPIO 12, set for high, clear for low
         size_bits: 1
         offset_bits: 12
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_13_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_13
+        description: Output state of GPIO 13, set for high, clear for low
         size_bits: 1
         offset_bits: 13
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_14_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_14
+        description: Output state of GPIO 14, set for high, clear for low
         size_bits: 1
         offset_bits: 14
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_15_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_15
+        description: Output state of GPIO 15, set for high, clear for low
         size_bits: 1
         offset_bits: 15
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_16_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_16
+        description: Output state of GPIO 16, set for high, clear for low
         size_bits: 1
         offset_bits: 16
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_17_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_17
+        description: Output state of GPIO 17, set for high, clear for low
         size_bits: 1
         offset_bits: 17
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_18_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_18
+        description: Output state of GPIO 18, set for high, clear for low
         size_bits: 1
         offset_bits: 18
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_19_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_19
+        description: Output state of GPIO 19, set for high, clear for low
         size_bits: 1
         offset_bits: 19
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_20_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_20
+        description: Output state of GPIO 20, set for high, clear for low
         size_bits: 1
         offset_bits: 20
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_21_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_21
+        description: Output state of GPIO 21, set for high, clear for low
         size_bits: 1
         offset_bits: 21
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_22_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_22
+        description: Output state of GPIO 22, set for high, clear for low
         size_bits: 1
         offset_bits: 22
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_23_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_23
+        description: Output state of GPIO 23, set for high, clear for low
         size_bits: 1
         offset_bits: 23
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_24_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_24
+        description: Output state of GPIO 24, set for high, clear for low
         size_bits: 1
         offset_bits: 24
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_25_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_25
+        description: Output state of GPIO 25, set for high, clear for low
         size_bits: 1
         offset_bits: 25
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_26_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_26
+        description: Output state of GPIO 26, set for high, clear for low
         size_bits: 1
         offset_bits: 26
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_27_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_27
+        description: Output state of GPIO 27, set for high, clear for low
         size_bits: 1
         offset_bits: 27
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_28_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_28
+        description: Output state of GPIO 28, set for high, clear for low
         size_bits: 1
         offset_bits: 28
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_29_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_29
+        description: Output state of GPIO 29, set for high, clear for low
         size_bits: 1
         offset_bits: 29
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_30_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_30
+        description: Output state of GPIO 30, set for high, clear for low
         size_bits: 1
         offset_bits: 30
         reset_value: 0x0
         access: r/w
-      - name: reg_gpio_31_o
-        description: Register Controlled GPIO Output Value
+      - name: gpio_output_state_31
+        description: Output state of GPIO 31, set for high, clear for low
         size_bits: 1
         offset_bits: 31
         reset_value: 0x0
