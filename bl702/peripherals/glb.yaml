@@ -297,11 +297,11 @@ registers:
     offset_bytes: 0x148
     size_bytes: 0x4
     fieldset: gpio_cfgctl18
-  - name: gpio_cfgctl30
+  - name: gpio_input_state
     verified: false
     offset_bytes: 0x180
     size_bytes: 0x4
-    fieldset: gpio_cfgctl30
+    fieldset: gpio_input_state
   - name: gpio_cfgctl31
     verified: false
     offset_bytes: 0x184
@@ -3546,196 +3546,196 @@ fieldsets:
         offset_bits: 22
         reset_value: 0x0
         access: rsvd
-  - name: gpio_cfgctl30
+  - name: gpio_input_state
     fields:
-      - name: reg_gpio_0_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_0
+        description: Input state of GPIO 0, set for high, clear for low
         size_bits: 1
         offset_bits: 0
         reset_value: 0x0
         access: r
-      - name: reg_gpio_1_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_1
+        description: Input state of GPIO 1, set for high, clear for low
         size_bits: 1
         offset_bits: 1
         reset_value: 0x0
         access: r
-      - name: reg_gpio_2_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_2
+        description: Input state of GPIO 2, set for high, clear for low
         size_bits: 1
         offset_bits: 2
         reset_value: 0x0
         access: r
-      - name: reg_gpio_3_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_3
+        description: Input state of GPIO 3, set for high, clear for low
         size_bits: 1
         offset_bits: 3
         reset_value: 0x0
         access: r
-      - name: reg_gpio_4_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_4
+        description: Input state of GPIO 4, set for high, clear for low
         size_bits: 1
         offset_bits: 4
         reset_value: 0x0
         access: r
-      - name: reg_gpio_5_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_5
+        description: Input state of GPIO 5, set for high, clear for low
         size_bits: 1
         offset_bits: 5
         reset_value: 0x0
         access: r
-      - name: reg_gpio_6_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_6
+        description: Input state of GPIO 6, set for high, clear for low
         size_bits: 1
         offset_bits: 6
         reset_value: 0x0
         access: r
-      - name: reg_gpio_7_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_7
+        description: Input state of GPIO 7, set for high, clear for low
         size_bits: 1
         offset_bits: 7
         reset_value: 0x0
         access: r
-      - name: reg_gpio_8_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_8
+        description: Input state of GPIO 8, set for high, clear for low
         size_bits: 1
         offset_bits: 8
         reset_value: 0x0
         access: r
-      - name: reg_gpio_9_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_9
+        description: Input state of GPIO 9, set for high, clear for low
         size_bits: 1
         offset_bits: 9
         reset_value: 0x0
         access: r
-      - name: reg_gpio_10_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_10
+        description: Input state of GPIO 10, set for high, clear for low
         size_bits: 1
         offset_bits: 10
         reset_value: 0x0
         access: r
-      - name: reg_gpio_11_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_11
+        description: Input state of GPIO 11, set for high, clear for low
         size_bits: 1
         offset_bits: 11
         reset_value: 0x0
         access: r
-      - name: reg_gpio_12_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_12
+        description: Input state of GPIO 12, set for high, clear for low
         size_bits: 1
         offset_bits: 12
         reset_value: 0x0
         access: r
-      - name: reg_gpio_13_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_13
+        description: Input state of GPIO 13, set for high, clear for low
         size_bits: 1
         offset_bits: 13
         reset_value: 0x0
         access: r
-      - name: reg_gpio_14_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_14
+        description: Input state of GPIO 14, set for high, clear for low
         size_bits: 1
         offset_bits: 14
         reset_value: 0x0
         access: r
-      - name: reg_gpio_15_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_15
+        description: Input state of GPIO 15, set for high, clear for low
         size_bits: 1
         offset_bits: 15
         reset_value: 0x0
         access: r
-      - name: reg_gpio_16_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_16
+        description: Input state of GPIO 16, set for high, clear for low
         size_bits: 1
         offset_bits: 16
         reset_value: 0x0
         access: r
-      - name: reg_gpio_17_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_17
+        description: Input state of GPIO 17, set for high, clear for low
         size_bits: 1
         offset_bits: 17
         reset_value: 0x0
         access: r
-      - name: reg_gpio_18_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_18
+        description: Input state of GPIO 18, set for high, clear for low
         size_bits: 1
         offset_bits: 18
         reset_value: 0x0
         access: r
-      - name: reg_gpio_19_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_19
+        description: Input state of GPIO 19, set for high, clear for low
         size_bits: 1
         offset_bits: 19
         reset_value: 0x0
         access: r
-      - name: reg_gpio_20_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_20
+        description: Input state of GPIO 20, set for high, clear for low
         size_bits: 1
         offset_bits: 20
         reset_value: 0x0
         access: r
-      - name: reg_gpio_21_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_21
+        description: Input state of GPIO 21, set for high, clear for low
         size_bits: 1
         offset_bits: 21
         reset_value: 0x0
         access: r
-      - name: reg_gpio_22_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_22
+        description: Input state of GPIO 22, set for high, clear for low
         size_bits: 1
         offset_bits: 22
         reset_value: 0x0
         access: r
-      - name: reg_gpio_23_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_23
+        description: Input state of GPIO 23, set for high, clear for low
         size_bits: 1
         offset_bits: 23
         reset_value: 0x0
         access: r
-      - name: reg_gpio_24_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_24
+        description: Input state of GPIO 24, set for high, clear for low
         size_bits: 1
         offset_bits: 24
         reset_value: 0x0
         access: r
-      - name: reg_gpio_25_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_25
+        description: Input state of GPIO 25, set for high, clear for low
         size_bits: 1
         offset_bits: 25
         reset_value: 0x0
         access: r
-      - name: reg_gpio_26_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_26
+        description: Input state of GPIO 26, set for high, clear for low
         size_bits: 1
         offset_bits: 26
         reset_value: 0x0
         access: r
-      - name: reg_gpio_27_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_27
+        description: Input state of GPIO 27, set for high, clear for low
         size_bits: 1
         offset_bits: 27
         reset_value: 0x0
         access: r
-      - name: reg_gpio_28_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_28
+        description: Input state of GPIO 28, set for high, clear for low
         size_bits: 1
         offset_bits: 28
         reset_value: 0x0
         access: r
-      - name: reg_gpio_29_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_29
+        description: Input state of GPIO 29, set for high, clear for low
         size_bits: 1
         offset_bits: 29
         reset_value: 0x0
         access: r
-      - name: reg_gpio_30_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_30
+        description: Input state of GPIO 30, set for high, clear for low
         size_bits: 1
         offset_bits: 30
         reset_value: 0x0
         access: r
-      - name: reg_gpio_31_i
-        description: Register Controlled GPIO Input value
+      - name: gpio_input_state_31
+        description: Input state of GPIO 31, set for high, clear for low
         size_bits: 1
         offset_bits: 31
         reset_value: 0x0
