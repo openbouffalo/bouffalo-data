@@ -322,16 +322,16 @@ registers:
     offset_bytes: 0x190
     size_bytes: 0x4
     fieldset: gpio_cfgctl34
-  - name: gpio_cfgctl35
+  - name: gpio_bank_0_irq_mask
     verified: false
     offset_bytes: 0x194
     size_bytes: 0x4
-    fieldset: gpio_cfgctl35
-  - name: gpio_int_mask1
+    fieldset: gpio_bank_0_irq_mask
+  - name: gpio_bank_1_irq_mask
     verified: false
     offset_bytes: 0x1a0
     size_bytes: 0x4
-    fieldset: gpio_int_mask1
+    fieldset: gpio_bank_1_irq_mask
   - name: gpio_int_stat1
     verified: false
     offset_bytes: 0x1a8
@@ -4174,17 +4174,17 @@ fieldsets:
         offset_bits: 31
         reset_value: 0x0
         access: r/w
-  - name: gpio_cfgctl35
+  - name: gpio_bank_0_irq_mask
     fields:
-      - name: reserved_0_31
+      - name: reg_gpio_bank_0_irq_mask
         description: reg_gpio_int_mask[31:0]
         size_bits: 32
         offset_bits: 0
         reset_value: 0x0
         access: rsvd
-  - name: gpio_int_mask1
+  - name: gpio_bank_1_irq_mask
     fields:
-      - name: reg_gpio_int_mask1
+      - name: reg_gpio_bank_1_irq_mask
         size_bits: 32
         offset_bits: 0
         reset_value: 0xffffffff
